@@ -91,3 +91,4 @@ with st.container(border=True):
         f"{' - 1 (aún no cumples)' if not ya_cumplio else ''}"
         f" = {año_nacimiento}"
     )
+
