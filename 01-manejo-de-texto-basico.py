@@ -1,5 +1,4 @@
 import streamlit as st
-from datetime import date
 
 
 # ============================================================
@@ -84,54 +83,3 @@ with st.container(border=True):
     st.write("Esto es st.container(border=True): una caja neutra con borde.")
     st.caption("Ideal para agrupar contenido sin un significado de estado.")
 
-
-# ============================================================
-#  SECCIÓN 3: Calculadora de año de nacimiento
-#  Un mini-formulario dentro de una caja con borde que pide
-#  la edad al usuario y calcula su año de nacimiento aproximado.
-# ============================================================
-
-st.divider()
-st.header("3. Calculadora de año de nacimiento")
-
-# Creamos una caja con borde para agrupar el formulario.
-with st.container(border=True):
-    # Título de la sección dentro de la caja
-    st.subheader("¿En qué año naciste aproximadamente?")
-
-    # Pedimos la edad actual con un input numérico.
-    # Los parámetros min_value y max_value evitan valores absurdos.
-    edad = st.number_input(
-        "Ingresa tu edad actual:",
-        min_value=0,
-        max_value=120,
-        value=25,
-        step=1,
-    )
-
-    # Preguntamos si ya cumplió años este año. Esto afina el cálculo:
-    # - Si ya cumplió: año_nacimiento = año_actual - edad
-    # - Si aún no cumple: año_nacimiento = año_actual - edad - 1
-    ya_cumplio = st.checkbox("¿Ya cumpliste años este año?", value=True)
-
-    # Obtenemos el año actual usando el módulo datetime.
-    año_actual = date.today().year
-
-    # Calculamos el año de nacimiento según la respuesta.
-    if ya_cumplio:
-        año_nacimiento = año_actual - edad
-    else:
-        año_nacimiento = año_actual - edad - 1
-
-    # Mostramos el resultado en una caja verde.
-    st.success(
-        f"Naciste en el año **{año_nacimiento}**.",
-        icon=":material/calendar_today:",
-    )
-
-    # También mostramos el desglose del cálculo para que se entienda.
-    st.caption(
-        f"Cálculo: {año_actual} (año actual) - {edad} (tu edad)"
-        f"{' - 1 (aún no cumples)' if not ya_cumplio else ''}"
-        f" = {año_nacimiento}"
-    )
