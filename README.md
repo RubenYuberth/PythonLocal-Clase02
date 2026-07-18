@@ -9,7 +9,7 @@ Estos ejercicios están pensados para que aprendas paso a paso, sin necesidad de
 ## ¿Qué necesitas?
 
 - **Python 3.14 o superior** (revisa con `python --version`).
-- **uv** como gestor de dependencias y entornos virtuales. Si aún no lo tenés, instalalo desde [https://docs.astral.sh/uv/](https://docs.astral.sh/uv/).
+- **uv** como gestor de dependencias y entornos virtuales. Si aún no lo tienes, instálalo desde [https://docs.astral.sh/uv/](https://docs.astral.sh/uv/).
 
 ---
 
@@ -80,7 +80,7 @@ Amplía los widgets interactivos con un formulario más completo:
 - Botones de acción (`st.button`).
 
 ### `04-tablas.py`
-Trabajá con datos y gráficos:
+Trabaja con datos y gráficos:
 - Creación de tablas con **Pandas** (`st.dataframe`).
 - Gráficos de líneas interactivos con **Plotly**.
 - Gráficos de barras ordenados.
@@ -104,7 +104,7 @@ Trabajá con datos y gráficos:
 
 ## Tips para seguir aprendiendo
 
-- **Experimenta**: modificá los valores, cambiá los textos, agrega nuevos widgets y mira qué pasa.
+- **Experimenta**: modifica los valores, cambia los textos, agrega nuevos widgets y mira qué pasa.
 - **Consulta la documentación oficial de Streamlit**: [https://docs.streamlit.io](https://docs.streamlit.io)
 
 ---
