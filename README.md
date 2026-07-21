@@ -85,6 +85,15 @@ Trabaja con datos y gráficos:
 - Gráficos de líneas interactivos con **Plotly**.
 - Gráficos de barras ordenados.
 
+### `05-tablas-excel.py`
+Aprende a usar archivos de Excel como fuente de datos para tus dashboards:
+- Carga de archivos `.xlsx` con **Pandas** (`pd.read_excel`).
+- Visualización de datos reales en tabla interactiva.
+- Gráfico de líneas con **Plotly** para analizar tendencias temporales (por ejemplo, ventas diarias).
+- Configuración de la página con `st.set_page_config` para un diseño más profesional.
+
+> **Nota:** este tutorial usa el archivo `ventas_febrero_2026.xlsx` como ejemplo. Puedes reemplazarlo por cualquier tabla de Excel propia.
+
 ---
 
 ## Estructura del proyecto
@@ -96,6 +105,8 @@ Trabaja con datos y gráficos:
 ├── 02-inputs-basicos.py             # Tutorial 2: inputs básicos
 ├── 03-mas-inputs.py                 # Tutorial 3: más widgets
 ├── 04-tablas.py                     # Tutorial 4: tablas y gráficos
+├── 05-tablas-excel.py               # Tutorial 5: datos desde Excel
+├── ventas_febrero_2026.xlsx         # Archivo de ejemplo para el tutorial 5
 ├── pyproject.toml                   # Dependencias y configuración del proyecto
 └── README.md                        # Este archivo
 ```
