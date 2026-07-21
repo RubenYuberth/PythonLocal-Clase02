@@ -2,6 +2,15 @@ import pandas as pd
 import streamlit as st
 import plotly.express as px
 
+#Esta parte es completamente alternativa,
+#sólo es para una configuración más bonita de la página, no es obligatoria.
+
+st.set_page_config(
+    page_title="Demostración de tablas y gráficos con Excel",
+    page_icon=":bar_chart:",
+    layout="wide",
+)
+
 # ============================================================
 #  SECCIÓN 1: Cargar archivo Excel 
 #  Si bien streamlit permite cargar archivos Excel,
